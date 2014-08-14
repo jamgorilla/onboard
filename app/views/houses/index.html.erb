@@ -1,10 +1,30 @@
 
+<article class="row">
+	<section class="rooms">
 
-<% @houses.each do |house| %>
-	
-	<%= house %>
+		<% @houses.each do |house| %>
+			
+			<div class='room'>
+
+				<h2>
+					<%= link_to house.title, house_path(house) %>
+				</h2>
+
+				<p><%= house.address %></p>
+				<p><%= house.latitude %></p>
+				<p><%= house.longitude %></p>
+				<p>£<%= house.price_in_pence / 100 %>/wk</p>
+				<p><%= house.number_of_rooms %></p>
+				<p><%= house.max_guests %></p>
+				<% house.is_featured %>
+			
+			</div>
+		
+		<% end %>
+
+	</section>
+</article>
 
 
 
 
-<% end %>
