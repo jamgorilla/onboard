@@ -5,3 +5,17 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+House.create([{
+
+	title: "Joe's House",
+	address: "Old Street",
+	latitude: 51.534528,
+	longitude: -0.059219,
+   	price_in_pence: 50000,
+    number_of_rooms: 2,
+    max_guests: 8,
+    is_featured: true,
+    user_id: 1
+ 
+	}])
